@@ -4,6 +4,7 @@ const keys = ["w", "s", "a", "d", "w", "w", "s", "a", "d", "w", "w", "s", "a", "
 const canvas = new fabric.Canvas("game");
 
 let isInInterval = false;
+let wasPressed = true;
 let score = 0;
 let circleColor = "red";
 let expKey = "w";
@@ -29,8 +30,10 @@ function InIntervalTrue(){
     updateCanvas();
 }
 function InIntervalFalse(){
-    isInInterval = false;
     circleColor = "red";
+    isInInterval = false;
+    score -= (!wasPressed) ? 1 : 0;
+    wasPressed = false;
     updateCanvas();
 }
 
@@ -60,15 +63,6 @@ function BpmToMillis(){
     return result;
 }
 
-function keyDown(){
-    if(isInInterval){
-        score++;
-    }
-    else{
-        score--;
-    }
-}
-
 function startBPM() {
     const interval = (60 / bpm) * 1000;
     return setInterval(() => {
@@ -90,4 +84,5 @@ document.addEventListener("keydown", function(event) {
     else{
         score--;
     }
+    wasPressed = true;
 });
