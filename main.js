@@ -46,7 +46,7 @@ function updateCanvas(){
     canvas.clear();
     canvas.add(text);
     var arrowType =(!isInInterval) ? 'circle.png' : (expKey == "w") ? 'arrowUp.png' : (expKey == "d") ? 'arrowRight.png' : (expKey == "s") ? 'arrowDown.png' : 'arrowLeft.png';
-    fabric.Image.fromURL('https://raw.githubusercontent.com/Slopsk123/Slap_Hero-v0.01/refs/heads/master/img/git ' + arrowType, function(arrow) {
+    fabric.Image.fromURL('https://raw.githubusercontent.com/Slopsk123/Slap_Hero-v0.01/refs/heads/master/img/' + arrowType, function(arrow) {
         arrow.set({ 
             left: 50,
             top: 100,
