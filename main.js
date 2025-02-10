@@ -47,7 +47,7 @@ function updateCanvas(){
     canvas.add(text);
     fabric.Image.fromURL('https://raw.githubusercontent.com/Slopsk123/Slap_Hero-v0.01/refs/heads/master/img/' + expKey + "Arrow.png", function(arrow) {
         arrow.set({ 
-            left: 200,
+            left: 300,
             top: 100,
             selectable: false
         });
@@ -57,7 +57,7 @@ function updateCanvas(){
 
        fabric.Image.fromURL('https://raw.githubusercontent.com/Slopsk123/Slap_Hero-v0.01/refs/heads/master/img/' + keys[keysIndex ] + "Arrow.png", function(arrow) {
         arrow.set({ 
-            left: 150,
+            left: 200,
             top: 100,
             selectable: false
         });
@@ -77,7 +77,7 @@ function updateCanvas(){
 
        fabric.Image.fromURL('https://raw.githubusercontent.com/Slopsk123/Slap_Hero-v0.01/refs/heads/master/img/' + keys[keysIndex +2] + "Arrow.png", function(arrow) {
         arrow.set({ 
-            left: 50,
+            left: 0,
             top: 100,
             selectable: false
         });
