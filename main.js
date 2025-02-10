@@ -1,6 +1,6 @@
 const bpm = 60;
 const tolerance = 500; //in milliseconds
-const keys = ["w", "s", "a", "d", "w", "w", "s", "a", "d", "w", "w", "s", "a", "d", "w", "w", "s", "a", "d", "w", "w", "s", "a", "d", "w"];
+const keys = ["w", "s", "a", "d", "w", "w", "s", "a", "d", "w", "w", "s", "a", "d", "w", "w", "s", "a", "d", "w", "w", "s", "a", "d", "w","w", "s", "a", "d", "w", "w", "s", "a", "d", "w", "w", "s", "a", "d", "w", "w", "s", "a", "d", "w", "w", "s", "a", "d", "w","w", "s", "a", "d", "w", "w", "s", "a", "d", "w", "w", "s", "a", "d", "w", "w", "s", "a", "d", "w", "w", "s", "a", "d", "w"];
 const canvas = new fabric.Canvas("game");
 
 let isInInterval = false;
